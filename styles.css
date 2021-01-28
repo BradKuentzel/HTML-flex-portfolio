@@ -44,7 +44,33 @@ main {
     
 }
 
+img {
+    border: 2px solid rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.center {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 .about-me {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -54,54 +80,43 @@ main {
     margin: 20px;
 }
 
-img {
-    border: 2px solid rgb(0, 0, 0);
-}
-
-img.center {
-    display: flex;
-    justify-content: center;
-}
-
-p {
-    font-size: 18px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-figure {
-    flex: 1;
-    text-align: center;
-    
-}
-
-figcaption {
-    margin: 0;
-    border:rgb(0, 0, 0) solid 2px;
-    color:rgb(0, 0, 0);
-    background-color: rgb(70, 70, 70);
-    font-size: 10;
-}
-
-.fig {
-    margin: 0;
-}
-
-#projects {
+div.column {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.form {
+figure img {
+    width: 250px;
+    height: 250px;
+}
+
+.links {
+    text-align: center;
+}
+
+figure a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+}
+
+figcaption {
+    border:rgb(0, 0, 0) solid 2px;
+    color:rgb(0, 0, 0);
+    background-color: rgb(70, 70, 70);
+    font-size: 10;
+    text-align: center;
+}
+
+form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 40px;
 }
 
 button {
@@ -111,25 +126,9 @@ button {
     padding: 14px 40px;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-}
-
 .contact-links {
     text-align: center;
     font-size: 30px;
-}
-
-a {
-    text-decoration: none;
-}
-
-figure a {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
 }
 
 label {
@@ -168,20 +167,20 @@ footer p {
       color: #bdbdbd;
     }
 
-    img.center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .pic {
-      justify-content: center;
-    }
-
-    #projects {
+    div.column {
+      display: flex;
       flex-direction: row;
       justify-content: center;
-      margin: -25px;
+    }
+
+    figure {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    img.center {
+      width: 400px;
+      height: 400px;
     }
 
     .about-me {

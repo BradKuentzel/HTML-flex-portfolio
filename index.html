@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,9 +23,9 @@
        </header>
        
         <main class="container">
-            
-            <img src="Pictures/my-pic.jpg" class="center" alt="Me sitting in my car" height=400px width=400px/>
-            
+            <div class="img">
+                <img src="Pictures/my-pic.jpg" class="center" alt="Me sitting in my car" width=400px/>
+            </div>
             <section class="about-me">
                 <div class="intro">
                     <h2>Intro</h2>
@@ -42,29 +42,36 @@
                 </div>
             </section>     
             
-            <h2 class="pro">Projects</h2>
+            
             <section id="projects">
-                <figure id="fig1">
-                    <a href="https://github.com/BradKuentzel/project-local-library"><img src="Pictures/aliens.jpg" class="fig" height=250px width=250px></a>
-                    <a href="https://bradkuentzel.github.io/project-local-library/"><strong>Local Library Project</strong></a>
+                <h2 class="pro">Projects</h2>
+                <div class="column">
+                    <figure>
+                        <div class="links">
+                        <a href="https://github.com/BradKuentzel/project-local-library"><img src="Pictures/aliens.jpg" alt="aliens"></a>
+                        <a href="https://bradkuentzel.github.io/project-local-library/"><strong>Local Library Project</strong></a>
+                        </div>
                     <figcaption>Wrote JavaScript functions to make a functional library system</figcaption>
-                </figure>   
+                    </figure>   
                         
-                <figure id="fig2">
-                    <a href="https://github.com/BradKuentzel/project-decoder-ring.git"><img src="Pictures/bigfoot.jpg" class="fig" height=250px width=250px></a>
-                    <a href="https://bradkuentzel.github.io/project-decoder-ring"/><strong>Decoder Ring</strong></a>
+                    <figure>
+                        <div class="links">
+                        <a href="https://github.com/BradKuentzel/project-decoder-ring.git"><img src="Pictures/bigfoot.jpg" alt="bigfoot"></a>
+                        <a href="https://bradkuentzel.github.io/project-decoder-ring"><strong>Decoder Ring</strong></a>
+                        </div>
                     <figcaption>Wrote 3 different ciphers using JavaScript algorithms</figcaption>
-                </figure>   
+                    </figure>   
                         
-                <figure id="fig3">
-                    <img src="Pictures/ufo.jpg" class="fig" height=250px width=250px>
-                        <figcaption>Coming Soon!</figcaption>
-                </figure>
+                    <figure>
+                        <img src="Pictures/ufo.jpg" alt="ufo">
+                    <figcaption>Coming Soon!</figcaption>
+                    </figure>
                         
-                <figure id="fig4">
-                    <img src="Pictures/lochness-monster.jpg" class="fig" height=250px width=250px>
-                        <figcaption>Coming Soon!</figcaption>
-                </figure>    
+                    <figure>
+                        <img src="Pictures/lochness-monster.jpg" alt="lochness-monster">
+                    <figcaption>Coming Soon!</figcaption>
+                    </figure>
+                </div>        
             </section>
             
             <section id="contact">
@@ -78,28 +85,27 @@
                     <br>
                 </div>
                 <div class="form">
-                    <form action="mailto:Bradkuentzel@icloud.com" method="post" enctype="text/plain">
-                        <label>Your Name:</label>
-                        <input type="text" name="yourName" value="">
+                    <form action="https://formspree.io/f/xyyboqaa" method="POST">
+                        <label>
+                        Your email:
+                        </label>
                         <br>
-                        <label>Your Email:</label>
-                        <input type="email" name="yourEmail" value="">
+                        <input type="text" name="_replyto">
                         <br>
-                        <label>Your Message:</label>
+                        <label>
+                        Your message:
+                        </label>    
                         <br>
-                        <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br>
+                        <textarea name="message"></textarea>
                         <div class="button">
                             <button type="submit">Make Contact!</button>
                         </div>
                     </form>
-                </div>
             </section>
        </main>
        <footer>
-        <p>&#169 Brad Kuentzel</p>
+        <p>&#169; Brad Kuentzel</p>
        </footer>
-        
-        <script src="" async defer></script>
     </body>
 </html>
 
