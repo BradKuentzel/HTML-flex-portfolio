@@ -48,7 +48,7 @@ main {
     flex-direction: column;
 }
 
-.intro, .about {
+.intro, #about {
     border: black solid 2px;
     background-color: rgb(100, 100, 100);
     margin: 20px;
@@ -92,7 +92,7 @@ figcaption {
     margin: 0;
 }
 
-.projects {
+#projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,7 +178,7 @@ footer p {
       justify-content: center;
     }
 
-    .projects {
+    #projects {
       flex-direction: row;
       justify-content: center;
       margin: -25px;
@@ -190,7 +190,7 @@ footer p {
       justify-content: space-evenly;
     }
   
-    .intro, .about {
+    .intro, #about {
       flex: 1; 
     }
 
